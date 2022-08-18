@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #d9e4f5;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: rgb(170, 125, 172);
+    font-size: 5rem;
+    opacity: 0.4;
+}
+
+.form {
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 400px;
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.add {
+    background-color: #fff;
+    font-family: inherit;
+    font-size: 1rem;
+    color: rgb(170, 125, 172);
+    border: none;
+    outline: 1px solid gray;
+    width: 50px;
+    cursor: pointer;
+    opacity: .7;
+    transition: all .3s ease-in-out;
+}
+
+.add:hover {
+    background-color: rgb(170, 125, 172);
+    color: #fff;
+    opacity: .4;
+}
+
+#todo-title {
+    color: #5e5e5e;
+    font-size: 2rem;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 1rem 2rem;
+}
+
+#todo-title::placeholder {
+    color: #dedede;
+}
+
+.category-container {
+    background-color: #f7f7f7;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+}
+
+.category-container * {
+    display: flex;
+    text-align: center;
+    padding: 0 .3rem;
+}
+
+.todo-container {
+    display: flex;
+}
+
+.todo-container {
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+.todo-container li {
+    position: relative;
+    color: #5e5e5e;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #aeaeae;
+    padding: 1.3rem 1.8rem 0.8rem 1.8rem;
+}
+
+.todo-container li.completed {
+    color: #8b8b8b;
+    text-decoration: line-through;
+}
+
+.cross {
+    position: absolute;
+    font-size: 1rem;
+    right: 2px;
+    top: 2px;
+    cursor: pointer;
+}
+
+.cross:hover {
+    opacity: .7;
+}
+
+.todo-container p {
+    font-size: .7rem;
+    font-weight: bold;
+    position: absolute;
+    top: -1px;
+    left: 180px;
+}
